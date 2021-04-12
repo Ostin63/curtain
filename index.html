@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Шторка</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="img-comp-container">
+    <div class="img-comp-img">
+      <img src="img/cat-mobile-after.png" width="280" height="232">
+    </div>
+    <div class="img-comp-img img-comp-overlay">
+      <img src="img/cat-mobile-before.png" width="251" height="240">
+    </div>
+  </div>
+  <div class="demo__slider slider">
+    <div class="slider__img">
+      <picture>
+        <source media="(min-width:  768px)" srcset="img/demo/cat-fat.png">
+        <img src="img/demo/cat-mobile-before.png" width="280px" height="232px" alt="было">
+      </picture>
+    </div>
+    <div class="slider__img slider__img--after  slider__img--overlay">
+      <picture>
+        <source media="(min-width:  768px)" srcset="img/demo/cat-skinny.png">
+        <img src="img/demo/cat-mobile-after.png" width="251px" height="240px
+            " alt="стало">
+      </picture>
+    </div>
+    <div class="slider__range">
+      <div class="slider__bar">
+        <button class="slider__pin" type="button">
+          <span class="visually-hidden">Ползунок слайдера</span>
+        </button>
+      </div>
+      <button class="slider__label slider__label--before">Было</button>
+      <button class="slider__label slider__label--after">Стало</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
